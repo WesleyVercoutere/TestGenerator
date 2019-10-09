@@ -2,34 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b574cec5-2131-4dcb-8384-f787d7aaeb01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/frontend/RootLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/frontend/RootLayout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/frontend/controller/MenuBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/frontend/controller/MenuBarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Footer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Footer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FXML/Footer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/Footer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/FXML/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/MenuBar.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/config/AppConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/frontend/RootLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/frontend/RootLayout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/frontend/controller/FooterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/frontend/controller/FooterController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/frontend/controller/MenuBarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/frontend/controller/MenuBarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/frontend/loader/CustomFXMLLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/frontend/loader/CustomFXMLLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/GenerateTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/GenerateTestClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/TestClassGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/TestClassGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/TypeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/TypeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/BooleanType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/BooleanType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/ClassType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/ClassType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/DoubleType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/DoubleType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/FloatType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/FloatType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/IntType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/IntType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/MethodType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/MethodType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/NumericType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/NumericType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/StringType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/obsolete/generator/impl/StringType.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +39,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PATH_TO_FX$" />
+    <property name="last_opened_file_path" value="C:/Program Files/SceneBuilder/SceneBuilder.exe" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -110,6 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570611613816</updated>
       <workItem from="1570635762316" duration="2473000" />
+      <workItem from="1570640208909" duration="1367000" />
     </task>
     <servers />
   </component>

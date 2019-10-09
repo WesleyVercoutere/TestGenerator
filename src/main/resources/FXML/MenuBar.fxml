@@ -16,9 +16,9 @@
       <Region HBox.hgrow="ALWAYS" />
       <HBox>
          <children>
-            <Button mnemonicParsing="false" text="Min" />
-            <Button mnemonicParsing="false" text="Max" />
-            <Button mnemonicParsing="false" onAction="#onCloseButton" styleClass="closeButton" stylesheets="@../css/app.css" text="Close" />
+            <Button mnemonicParsing="false" onAction="#onMinimizeButtonClicked" text="Min" />
+            <Button mnemonicParsing="false" onAction="#onMaximizeButtonClicked" text="Max" />
+            <Button mnemonicParsing="false" onAction="#onCloseButtonClicked" styleClass="closeButton" stylesheets="@../css/app.css" text="Close" />
          </children>
       </HBox>
    </children>

@@ -39,8 +39,14 @@ public class RootLayout {
     private void createPrimaryStage() {
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setTitle("Test generator");
-        stage.setWidth(800);
-        stage.setHeight(500);
+        setSize();
+    }
+
+    private void setSize() {
+        if (!stage.isMaximized()) {
+            stage.setWidth(800);
+            stage.setHeight(500);
+        }
     }
 
     private void createRootLayout() {
@@ -72,7 +78,18 @@ public class RootLayout {
         layout.setCenter(pane);
     }
 
+    public void minimize() {
+        stage.setIconified(true);
+    }
+
+    public void maximize() {
+        stage.setMaximized(!stage.isMaximized());
+        setSize();
+    }
+
     public void close() {
         stage.close();
     }
+
+
 }

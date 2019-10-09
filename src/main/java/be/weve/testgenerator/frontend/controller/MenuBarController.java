@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MenuBarController {
 
-    RootLayout root;
+    private RootLayout root;
 
     private double xOffset;
     private double yOffset;
@@ -56,7 +56,18 @@ public class MenuBarController {
     }
 
     @FXML
-    private void onCloseButton() {
+    private void onMinimizeButtonClicked() {
+        root.minimize();
+    }
+
+    @FXML
+    private void onMaximizeButtonClicked() {
+        root.maximize();
+    }
+
+    @FXML
+    private void onCloseButtonClicked() {
         root.close();
     }
+
 }
