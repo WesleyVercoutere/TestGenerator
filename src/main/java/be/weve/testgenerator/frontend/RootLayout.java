@@ -24,6 +24,10 @@ public class RootLayout {
         this.stage = primaryStage;
     }
 
+    public Stage getStage() {
+        return this.stage;
+    }
+
     public void init() {
         createPrimaryStage();
         createRootLayout();
