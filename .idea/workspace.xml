@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b574cec5-2131-4dcb-8384-f787d7aaeb01" name="Default Changelist" comment="" />
+    <list default="true" id="b574cec5-2131-4dcb-8384-f787d7aaeb01" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaFX.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/javafx/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/javafx/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/javafx/frontend/RootLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/frontend/RootLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/javafx/frontend/controller/FooterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/frontend/controller/FooterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/javafx/frontend/controller/MenuBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/frontend/controller/MenuBarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/javafx/frontend/loader/CustomFXMLLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/frontend/loader/CustomFXMLLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/GenerateTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/obsolete/GenerateTestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/generator/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/obsolete/generator/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/generator/TestClassGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/obsolete/generator/TestClassGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/generator/TypeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/obsolete/generator/TypeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/generator/impl/BooleanType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/obsolete/generator/impl/BooleanType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/generator/impl/ClassType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/obsolete/generator/impl/ClassType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/generator/impl/DoubleType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/obsolete/generator/impl/DoubleType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/generator/impl/FloatType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/obsolete/generator/impl/FloatType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/generator/impl/IntType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/obsolete/generator/impl/IntType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/generator/impl/MethodType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/obsolete/generator/impl/MethodType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/generator/impl/NumericType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/obsolete/generator/impl/NumericType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/generator/impl/StringType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/obsolete/generator/impl/StringType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Footer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Footer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXML/Footer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/Footer.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FXML/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/MenuBar.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/JavaFX.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/javafx/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/javafx/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/javafx/frontend/RootLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/javafx/frontend/controller/FooterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/javafx/frontend/controller/MenuBarController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/weve/javafx/frontend/loader/CustomFXMLLoader.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +49,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -25,7 +61,8 @@
   </component>
   <component name="ProjectId" id="1RxbIO2WqUJ8ZuggdPz9Awz6l0x" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/Program Files/SceneBuilder/SceneBuilder.exe" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -45,11 +82,11 @@
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="be.weve.javafx.App" />
+      <option name="MAIN_CLASS_NAME" value="be.weve.testgenerator.App" />
       <module name="JavaFX" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="be.weve.javafx.*" />
+          <option name="PATTERN" value="be.weve.testgenerator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,5 +112,18 @@
       <updated>1570611613816</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

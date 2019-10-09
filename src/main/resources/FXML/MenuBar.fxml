@@ -2,26 +2,27 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.Region?>
 
-<AnchorPane style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.weve.javafx.frontend.controller.MenuBarController">
+<HBox styleClass="menuBar" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.weve.testgenerator.frontend.controller.MenuBarController">
    <children>
-      <HBox spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox spacing="20.0">
          <children>
-            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="MenuBar">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
             <Button mnemonicParsing="false" onAction="#openHomePage" text="Home" />
             <Button mnemonicParsing="false" onAction="#openPage2" text="Page 2" />
          </children>
-         <padding>
-            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-         </padding>
+      </HBox>
+      <Region HBox.hgrow="ALWAYS" />
+      <HBox>
+         <children>
+            <Button mnemonicParsing="false" text="Min" />
+            <Button mnemonicParsing="false" text="Max" />
+            <Button mnemonicParsing="false" onAction="#onCloseButton" styleClass="closeButton" stylesheets="@../css/app.css" text="Close" />
+         </children>
       </HBox>
    </children>
-</AnchorPane>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</HBox>
