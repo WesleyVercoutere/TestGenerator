@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b574cec5-2131-4dcb-8384-f787d7aaeb01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/frontend/RootLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/frontend/RootLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/frontend/controller/MenuBarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/weve/testgenerator/frontend/controller/MenuBarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/MenuBar.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FXML/MenuBar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/MenuBar.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/frontend/RootLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/frontend/RootLayout.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/frontend/controller/MenuBarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/weve/testgenerator/frontend/controller/MenuBarController.class" afterDir="false" />
     </list>
@@ -40,7 +37,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="C:/Program Files/SceneBuilder/SceneBuilder.exe" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
@@ -61,7 +58,6 @@
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.weve.testgenerator.App" />
       <module name="JavaFX" />
-      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="be.weve.testgenerator.*" />
