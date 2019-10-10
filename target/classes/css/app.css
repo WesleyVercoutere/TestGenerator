@@ -26,3 +26,7 @@
 .closeButton:hover{
     -fx-background-color: red;
 }
+
+.closeButton:pressed{
+    -fx-background-color: #F1707A;
+}
