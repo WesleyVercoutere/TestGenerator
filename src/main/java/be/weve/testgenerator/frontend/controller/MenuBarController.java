@@ -3,6 +3,8 @@ package be.weve.testgenerator.frontend.controller;
 import be.weve.testgenerator.frontend.RootLayout;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import org.springframework.stereotype.Component;
@@ -17,6 +19,9 @@ public class MenuBarController {
 
     @FXML
     HBox menuPane;
+
+    @FXML
+    Image btnMaximize;
 
     //Constructor for DI from Spring
     public MenuBarController(RootLayout rootLayout) {
@@ -43,6 +48,9 @@ public class MenuBarController {
                 root.getStage().setY(event.getScreenY() + yOffset);
             }
         });
+
+
+
     }
 
     @FXML
