@@ -1,6 +1,12 @@
 package be.weve.testgenerator.frontend.controller;
 
+import be.weve.testgenerator.config.Icons;
 import be.weve.testgenerator.frontend.RootLayout;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.Property;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
@@ -17,6 +23,10 @@ public class MenuBarController {
     private double xOffset;
     private double yOffset;
 
+    private Image image;
+    private Image imageLarge;
+    private Image imageRestore;
+
     @FXML
     HBox menuPane;
 
@@ -26,44 +36,22 @@ public class MenuBarController {
     //Constructor for DI from Spring
     public MenuBarController(RootLayout rootLayout) {
         this.root = rootLayout;
+
+        init();
+    }
+
+    private void init() {
+        imageLarge = new Image(Icons.ICON_MAXIMIZE_SCREEN);
+        imageRestore = new Image(Icons.ICON_RESTORE_SCREEN);
     }
 
     @FXML
     private void initialize() {
-        xOffset = 0;
-        xOffset = 0;
+        moveScreen();
+        setMaximizeButtonImage(root.getStage().isMaximized());
 
-        menuPane.setOnMousePressed(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                xOffset = root.getStage().getX() - event.getScreenX();
-                yOffset = root.getStage().getY() - event.getScreenY();
-            }
-        });
-
-        menuPane.setOnMouseDragged(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                root.getStage().setX(event.getScreenX() + xOffset);
-                root.getStage().setY(event.getScreenY() + yOffset);
-            }
-        });
-
-        Image imageLarge = new Image("icon/window/maximize_dark.png");
-        Image imageRestore = new Image("icon/window/restore_dark.png");
-
-        Image image;
-
-
-
-        if (root.getStage().isMaximized()) {
-            image = imageRestore;
-        } else {
-            image = imageLarge;
-        }
-
-        btnMaximize.setImage(image);
-
+        // Set listener to screen maximized property to change image on button
+        root.getStage().maximizedProperty().addListener((observable, oldValue, newValue) -> setMaximizeButtonImage(newValue));
     }
 
     @FXML
@@ -91,4 +79,34 @@ public class MenuBarController {
         root.close();
     }
 
+    private void moveScreen() {
+        xOffset = 0;
+        xOffset = 0;
+
+        menuPane.setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                xOffset = root.getStage().getX() - event.getScreenX();
+                yOffset = root.getStage().getY() - event.getScreenY();
+            }
+        });
+
+        menuPane.setOnMouseDragged(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                root.getStage().setX(event.getScreenX() + xOffset);
+                root.getStage().setY(event.getScreenY() + yOffset);
+            }
+        });
+    }
+
+    private void setMaximizeButtonImage(boolean max) {
+        if (max) {
+            image = imageRestore;
+        } else {
+            image = imageLarge;
+        }
+
+        btnMaximize.setImage(image);
+    }
 }
