@@ -19,14 +19,19 @@
     -fx-background-color: transparent;
 }
 
-.button:hover{
+.button:hover {
     -fx-background-color: #4F5254;
 }
 
-.closeButton:hover{
+.windowButton {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+
+.closeButton:hover {
     -fx-background-color: red;
 }
 
-.closeButton:pressed{
+.closeButton:pressed {
     -fx-background-color: #F1707A;
 }
