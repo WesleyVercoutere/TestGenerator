@@ -2,6 +2,7 @@ package be.weve.testgenerator.frontend.controller;
 
 import be.weve.testgenerator.config.Icons;
 import be.weve.testgenerator.frontend.RootLayout;
+import be.weve.testgenerator.service.dto.DomainClassDto;
 import be.weve.testgenerator.service.manager.DomainClassManager;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 public class MenuBarController {
@@ -67,7 +69,8 @@ public class MenuBarController {
         List<File> files = chooser.showOpenMultipleDialog(root.getStage());
 
         if (files != null) {
-            domainClassManager.openFiles(files);
+            List<DomainClassDto> dtos = files.stream().map(this::mapFile).collect(Collectors.toList());
+            domainClassManager.openFiles(dtos);
         }
     }
 
@@ -129,5 +132,13 @@ public class MenuBarController {
                 new FileChooser.ExtensionFilter("JAVA", "*.java"),
                 new FileChooser.ExtensionFilter("All Files", "*.*")
         );
+    }
+
+    private DomainClassDto mapFile(File file) {
+        DomainClassDto dto = new DomainClassDto();
+        dto.setPath(file.getPath());
+        dto.setFileName(file.getName());
+
+        return dto;
     }
 }

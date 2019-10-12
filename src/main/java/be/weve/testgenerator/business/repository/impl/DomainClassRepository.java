@@ -4,18 +4,28 @@ import be.weve.testgenerator.business.DomainClass;
 import be.weve.testgenerator.business.repository.Repository;
 import be.weve.testgenerator.util.exception.NotImplementedException;
 
+import java.util.ArrayList;
 import java.util.List;
 
+@org.springframework.stereotype.Repository
 public class DomainClassRepository implements Repository<DomainClass> {
 
-    @Override
-    public DomainClass create(DomainClass domainClass) throws NotImplementedException {
-        throw new NotImplementedException("Method not implemented");
+    List<DomainClass> domainClasses;
+
+    public DomainClassRepository() {
+        domainClasses = new ArrayList<>();
     }
 
     @Override
-    public List<DomainClass> readAll() throws NotImplementedException {
-        throw new NotImplementedException("Method not implemented");
+    public DomainClass create(DomainClass domainClass) {
+        domainClasses.add(domainClass);
+
+        return domainClass;
+    }
+
+    @Override
+    public List<DomainClass> readAll() {
+        return domainClasses;
     }
 
     @Override

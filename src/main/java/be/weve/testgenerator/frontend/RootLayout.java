@@ -1,6 +1,7 @@
 package be.weve.testgenerator.frontend;
 
 import be.weve.testgenerator.frontend.loader.CustomFXMLLoader;
+import be.weve.testgenerator.service.manager.DomainClassManager;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
@@ -8,6 +9,9 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import org.springframework.stereotype.Component;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 
 @Component
 public class RootLayout {
@@ -38,6 +42,7 @@ public class RootLayout {
         createRootLayout();
         createMenuBar();
         createFooter();
+        createCenter();
     }
 
     private void createPrimaryStage() {
@@ -73,6 +78,10 @@ public class RootLayout {
 
     private void createFooter() {
         layout.setBottom(loader.loadView("FXML/Footer.fxml"));
+    }
+
+    private void createCenter() {
+        layout.setCenter(loader.loadView("FXML/FileList.fxml"));
     }
 
 

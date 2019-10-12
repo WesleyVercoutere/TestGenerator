@@ -16,6 +16,15 @@
     -fx-background-color: #2B2B2B;
 }
 
+.label {
+    -fx-text-fill: #FFFFFF;
+}
+
+.content {
+    -fx-font-size: 12px;
+    -fx-text-fill: #FFFFFF;
+}
+
 .button {
     -fx-background-color: transparent;
 }
