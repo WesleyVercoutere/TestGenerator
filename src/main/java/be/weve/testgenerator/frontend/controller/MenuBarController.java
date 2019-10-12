@@ -126,8 +126,8 @@ public class MenuBarController {
         chooser = new FileChooser();
         chooser.setTitle("Open domain classes");
         chooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("All Files", "*.*"),
-                new FileChooser.ExtensionFilter("JAVA", "*.java")
+                new FileChooser.ExtensionFilter("JAVA", "*.java"),
+                new FileChooser.ExtensionFilter("All Files", "*.*")
         );
     }
 }
