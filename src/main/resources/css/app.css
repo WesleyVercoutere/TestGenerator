@@ -1,17 +1,18 @@
 .menuBar {
-    -fx-font-size: 14px;
+    -fx-font-size: 12px;
     -fx-background-color: #3C3F41;
     -fx-text-fill: #ffffff;
 }
 
 .footer {
-    -fx-font-size: 14px;
+    -fx-font-size: 12px;
     -fx-background-color: #3C3F41;
     -fx-text-fill: #ffffff;
 }
 
-.content {
-    -fx-font-size: 14px;
+.borderPane {
+    -fx-font-size: 12px;
+    -fx-text-fill: #FFFFFF;
     -fx-background-color: #2B2B2B;
 }
 

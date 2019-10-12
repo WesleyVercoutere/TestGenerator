@@ -33,7 +33,6 @@ public class RootLayout {
         createRootLayout();
         createMenuBar();
         createFooter();
-        showStart();
     }
 
     private void createPrimaryStage() {
@@ -51,7 +50,12 @@ public class RootLayout {
 
     private void createRootLayout() {
         layout = new BorderPane();
+        layout.getStyleClass().clear();
+        layout.getStyleClass().add("borderPane");
+
         Scene scene = new Scene(layout);
+        scene.getStylesheets().add("css/app.css");
+
         stage.setScene(scene);
         stage.show();
     }
@@ -64,6 +68,7 @@ public class RootLayout {
         layout.setBottom(loader.loadView("FXML/Footer.fxml"));
     }
 
+    // Test Pane for start project
     public void showStart() {
         Pane pane = new Pane();
         Label label = new Label("Start");
@@ -71,6 +76,7 @@ public class RootLayout {
         layout.setCenter(pane);
     }
 
+    // Test Pane for start project
     public void showPage2() {
         Pane pane = new Pane();
         Label label = new Label("Page 2");
