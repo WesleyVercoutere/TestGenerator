@@ -1,15 +1,16 @@
 package be.weve.testgenerator.frontend.controller;
 
 import be.weve.testgenerator.frontend.RootLayout;
+import be.weve.testgenerator.service.dto.DomainClassDto;
 import be.weve.testgenerator.service.manager.DomainClassManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import org.springframework.stereotype.Controller;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.util.List;
 
 @Controller
 public class FileListController implements PropertyChangeListener {
@@ -36,7 +37,7 @@ public class FileListController implements PropertyChangeListener {
 
         if (evt.getPropertyName().equals("addList")) {
             clearPane();
-            updateList();
+            updateView();
         }
     }
 
@@ -44,11 +45,8 @@ public class FileListController implements PropertyChangeListener {
         pane.getChildren().clear();
     }
 
-    private void updateList() {
-
-        for (int i = 0; i < 5; i++) {
-            pane.getChildren().add(new Label("Ok"));
-        }
-
+    private void updateView() {
+        List<DomainClassDto> dtos = manager.getAll();
+        dtos.forEach(e -> pane.getChildren().add(new Label(e.getFileName())));
     }
 }

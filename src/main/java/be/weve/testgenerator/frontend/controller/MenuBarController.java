@@ -75,8 +75,8 @@ public class MenuBarController {
     }
 
     @FXML
-    private void createTestFiles() {
-        //root.showPage2();
+    private void createTestFiles() throws ClassNotFoundException {
+        domainClassManager.createTests();
     }
 
     @FXML
