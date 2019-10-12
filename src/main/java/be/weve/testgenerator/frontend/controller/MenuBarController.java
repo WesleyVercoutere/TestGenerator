@@ -2,11 +2,7 @@ package be.weve.testgenerator.frontend.controller;
 
 import be.weve.testgenerator.config.Icons;
 import be.weve.testgenerator.frontend.RootLayout;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.Property;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
+import be.weve.testgenerator.service.manager.DomainClassManager;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
@@ -15,6 +11,9 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.stage.FileChooser;
 import org.springframework.stereotype.Component;
+
+import java.io.File;
+import java.util.List;
 
 @Component
 public class MenuBarController {
@@ -30,6 +29,9 @@ public class MenuBarController {
 
     private FileChooser chooser;
 
+    //Spring beans
+    private DomainClassManager domainClassManager;
+
     @FXML
     HBox menuPane;
 
@@ -37,8 +39,10 @@ public class MenuBarController {
     ImageView btnMaximize;
 
     //Constructor for DI from Spring
-    public MenuBarController(RootLayout rootLayout) {
+    public MenuBarController(RootLayout rootLayout,
+                             DomainClassManager domainClassManager) {
         this.root = rootLayout;
+        this.domainClassManager = domainClassManager;
 
         init();
     }
@@ -50,6 +54,7 @@ public class MenuBarController {
 
     @FXML
     private void initialize() {
+        setupChooser();
         moveScreen();
         setMaximizeButtonImage(root.getStage().isMaximized());
 
@@ -59,13 +64,12 @@ public class MenuBarController {
 
     @FXML
     private void openFiles() {
-        chooser = new FileChooser();
-
-        chooser.showOpenDialog(root.getStage());
+        List<File> files = chooser.showOpenMultipleDialog(root.getStage());
+        if (files != null || !files.isEmpty()) domainClassManager.openFiles(files);
     }
 
     @FXML
-    private void openPage2() {
+    private void createTestFiles() {
         //root.showPage2();
     }
 
@@ -113,5 +117,14 @@ public class MenuBarController {
         }
 
         btnMaximize.setImage(image);
+    }
+
+    private void setupChooser() {
+        chooser = new FileChooser();
+        chooser.setTitle("Open domain classes");
+        chooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("All Files", "*.*"),
+                new FileChooser.ExtensionFilter("JAVA", "*.java")
+        );
     }
 }

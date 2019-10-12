@@ -20,7 +20,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button mnemonicParsing="false" onAction="#openPage2">
+            <Button mnemonicParsing="false" onAction="#createTestFiles">
                <graphic>
                   <ImageView pickOnBounds="true" preserveRatio="true">
                      <image>
