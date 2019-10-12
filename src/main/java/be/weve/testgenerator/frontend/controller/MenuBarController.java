@@ -65,7 +65,10 @@ public class MenuBarController {
     @FXML
     private void openFiles() {
         List<File> files = chooser.showOpenMultipleDialog(root.getStage());
-        if (files != null || !files.isEmpty()) domainClassManager.openFiles(files);
+
+        if (files != null) {
+            domainClassManager.openFiles(files);
+        }
     }
 
     @FXML
