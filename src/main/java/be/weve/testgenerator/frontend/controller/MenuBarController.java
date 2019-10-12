@@ -13,6 +13,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
+import javafx.stage.FileChooser;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -26,6 +27,8 @@ public class MenuBarController {
     private Image image;
     private Image imageLarge;
     private Image imageRestore;
+
+    private FileChooser chooser;
 
     @FXML
     HBox menuPane;
@@ -55,13 +58,15 @@ public class MenuBarController {
     }
 
     @FXML
-    private void openHomePage() {
-        root.showStart();
+    private void openFiles() {
+        chooser = new FileChooser();
+
+        chooser.showOpenDialog(root.getStage());
     }
 
     @FXML
     private void openPage2() {
-        root.showPage2();
+        //root.showPage2();
     }
 
     @FXML

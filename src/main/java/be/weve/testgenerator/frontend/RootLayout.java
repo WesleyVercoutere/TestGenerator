@@ -14,11 +14,16 @@ public class RootLayout {
 
     private Stage stage;
     private BorderPane layout;
+    private Scene scene;
+
+    //Spring dependencies
     private CustomFXMLLoader loader;
 
+    //Constructor for Spring di
     public RootLayout(CustomFXMLLoader customFXMLLoader) {
         this.loader = customFXMLLoader;
     }
+
 
     public void setStage(Stage primaryStage) {
         this.stage = primaryStage;
@@ -60,6 +65,8 @@ public class RootLayout {
         stage.show();
     }
 
+
+    //Show header and footer
     private void createMenuBar() {
         layout.setTop(loader.loadView("FXML/MenuBar.fxml"));
     }
@@ -68,22 +75,8 @@ public class RootLayout {
         layout.setBottom(loader.loadView("FXML/Footer.fxml"));
     }
 
-    // Test Pane for start project
-    public void showStart() {
-        Pane pane = new Pane();
-        Label label = new Label("Start");
-        pane.getChildren().add(label);
-        layout.setCenter(pane);
-    }
 
-    // Test Pane for start project
-    public void showPage2() {
-        Pane pane = new Pane();
-        Label label = new Label("Page 2");
-        pane.getChildren().add(label);
-        layout.setCenter(pane);
-    }
-
+    //Main window methods
     public void minimize() {
         stage.setIconified(true);
     }
@@ -97,5 +90,7 @@ public class RootLayout {
         stage.close();
     }
 
+
+    //Show different windows in layout
 
 }

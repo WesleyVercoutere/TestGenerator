@@ -12,7 +12,7 @@
    <children>
       <HBox alignment="BOTTOM_LEFT" spacing="5.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#openHomePage">
+            <Button mnemonicParsing="false" onAction="#openFiles">
                <graphic>
                   <ImageView pickOnBounds="true" preserveRatio="true">
                      <image>
